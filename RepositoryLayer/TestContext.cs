@@ -6,7 +6,7 @@ namespace RepositoryLayer
 {
     public class TestDbContext : DbContext
     {
-        public DbSet<EntitiesLib.Persoon> Personen { get; set; }
+        public IDbSet<EntitiesLib.Persoon> Personen { get; set; }
 
         public TestDbContext()
         {

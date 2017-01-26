@@ -49,8 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdresRepository.cs" />
+    <Compile Include="IAdresRepository.cs" />
+    <Compile Include="IPersoonRepository.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="ITestUnitOfWork.cs" />
+    <Compile Include="PersoonRepository.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="TestContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

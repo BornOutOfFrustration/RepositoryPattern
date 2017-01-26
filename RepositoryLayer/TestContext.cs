@@ -8,7 +8,7 @@ using EntitiesLib;
 
 namespace RepositoryLayer
 {
-    public class TestContext : DbContext
+    public class TestDbContext : DbContext
     {
         public DbSet<Persoon> Personen { get; set; }
         public DbSet<Adres> Adressen { get; set; }

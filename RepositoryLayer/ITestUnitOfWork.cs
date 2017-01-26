@@ -9,7 +9,6 @@ namespace RepositoryLayer
     public interface ITestUnitOfWork : IDisposable
     {
         IPersoonRepository Personen { get; }
-        IAdresRepository Adressen { get; }
         int Complete();
     }
 }

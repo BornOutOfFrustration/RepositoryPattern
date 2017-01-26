@@ -10,14 +10,11 @@ namespace RepositoryLayer
     {
         private readonly TestDbContext Context;
 
-        public TestUnitOfWork(TestDbContext context)
+        internal TestUnitOfWork(TestDbContext context)
         {
             this.Context = context;
-            this.Adressen = new AdresRepository(context);
             this.Personen = new PersoonRepository(context);
         }
-
-        public IAdresRepository Adressen { get; }
 
         public IPersoonRepository Personen { get; }
 
@@ -60,5 +57,13 @@ namespace RepositoryLayer
             // GC.SuppressFinalize(this);
         }
         #endregion
+    }
+
+    public class UnitOfWorkFactory
+    {
+        public ITestUnitOfWork Create()
+        {
+            return new TestUnitOfWork(new TestDbContext());
+        }
     }
 }

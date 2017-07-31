@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer
 {
-    public class TestUnitOfWork : ITestUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
-        private readonly TestDbContext Context;
+        private readonly TheDbContext Context;
 
-        internal TestUnitOfWork(TestDbContext context)
+        internal UnitOfWork(TheDbContext context)
         {
             this.Context = context;
             this.Personen = new PersoonRepository(context);
@@ -61,9 +61,9 @@ namespace RepositoryLayer
 
     public class UnitOfWorkFactory
     {
-        public ITestUnitOfWork Create()
+        public IUnitOfWork Create()
         {
-            return new TestUnitOfWork(new TestDbContext());
+            return new UnitOfWork(new TheDbContext());
         }
     }
 }

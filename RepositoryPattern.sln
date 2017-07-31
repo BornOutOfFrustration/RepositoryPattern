@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern", "RepositoryPattern\RepositoryPattern.csproj", "{F6D9EF17-6323-4BCC-857D-4AB7D80E8A7F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPatternUnitTests", "RepositoryPatternUnitTests\RepositoryPatternUnitTests.csproj", "{12A8547B-AC6C-44DA-9934-FAEB215D0B84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesLib", "EntitiesLib\EntitiesLib.csproj", "{8622FC01-0EC1-4288-B2D2-A9FD37B8839B}"
 EndProject
@@ -21,10 +19,6 @@ Global
 		{F6D9EF17-6323-4BCC-857D-4AB7D80E8A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6D9EF17-6323-4BCC-857D-4AB7D80E8A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6D9EF17-6323-4BCC-857D-4AB7D80E8A7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{12A8547B-AC6C-44DA-9934-FAEB215D0B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12A8547B-AC6C-44DA-9934-FAEB215D0B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12A8547B-AC6C-44DA-9934-FAEB215D0B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12A8547B-AC6C-44DA-9934-FAEB215D0B84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8622FC01-0EC1-4288-B2D2-A9FD37B8839B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8622FC01-0EC1-4288-B2D2-A9FD37B8839B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8622FC01-0EC1-4288-B2D2-A9FD37B8839B}.Release|Any CPU.ActiveCfg = Release|Any CPU

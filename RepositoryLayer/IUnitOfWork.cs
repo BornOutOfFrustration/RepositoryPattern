@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer
 {
-    public interface ITestUnitOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable
     {
         IPersoonRepository Personen { get; }
         int Complete();

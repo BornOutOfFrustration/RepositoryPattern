@@ -4,11 +4,11 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace RepositoryLayer
 {
-    public class TestDbContext : DbContext
+    public class TheDbContext : DbContext
     {
         public IDbSet<EntitiesLib.Persoon> Personen { get; set; }
 
-        public TestDbContext()
+        public TheDbContext() : base("name = Model")
         {
             // NuGet magic :-(
             // http://robsneuron.blogspot.nl/2013/11/entity-framework-upgrade-to-6.html

@@ -2,12 +2,12 @@
 {
     public class PersoonRepository : Repository<EntitiesLib.Persoon>, IPersoonRepository
     {
-        internal PersoonRepository(TestDbContext context) : base(context)
+        internal PersoonRepository(TheDbContext context) : base(context)
         {
         }
 
-        private new TestDbContext Context
-        { get { return base.Context as TestDbContext; } }
+        private new TheDbContext Context
+        { get { return base.Context as TheDbContext; } }
 
         // TODO: Add filtered query results.
     }
